@@ -1,2 +1,2 @@
 # RecipeSearch-from-Api-
-![](img/recipe.png)
+![](recipe.png)
