@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allrecipes</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<main>
+    <header>
+        <h1>AllRecipes</h1>
+    </header>   
+    <div class="container">
+        
+        
+        <h2 id="find_recipe">Find a Recipe</h2>
+        <div class="inputs">
+            <input type="text" class="input" ingredients-input placeholder="ingredients...">
+            <input type="text" class="input" query-input placeholder="type of dish...">
+            <button class="search-btn" search-btn>Search</button>
+        </div>
+        <h2 class="info hide" info-data> If you are interested with recipe click picture for more info</h2>
+        <section class="content" data-content>
+            
+        </section>
+        
+        <footer class="catalog_footer">
+            <button class="loadmore_button hide" data-load-button>Load more </button>
+            <div class="loader hide" data-loader>Loading...</div>
+        </footer>
+        
+    </div>
+</main>
+    
+    <script src="app.js"></script>
+    <script>
+        const catalog = new RecipeCatalog();
+        catalog.initializeCatalog();
+    </script>
+</body>
+</html>
